@@ -1,0 +1,57 @@
+#Primer semestre
+
+##(Otoño 2015)
+  
+Matemáticas básicas :7
+
+Problemas de matemáticas básicas :7
+
+Programación actuarial I :9    
+
+Introducción actuarial :10
+
+Conceptos de cálculo :10
+
+DHPC :9
+
+
+
+
+
+#Segundo semestre
+
+##(Primavera 2016)
+
+Teoría de ecuaciones :9
+
+Contabilidad general :10
+
+Geometría analítica :10
+
+Teoría del interés I :8
+
+Formación humana y social :8
+
+
+
+
+
+#Tercer semestre
+
+##(otoño 2016)
+
+Cálculo Diferencial :9
+ 
+Algebra lineal :7
+
+Registros académicos del español :8
+ 
+Microeconomía :9 
+
+Teoría del interés II :8
+
+Programación Actuarial II :8
+
+
+
+
