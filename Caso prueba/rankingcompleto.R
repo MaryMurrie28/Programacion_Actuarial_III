@@ -2,10 +2,7 @@
     rankingcompleto<-function(resultado,num="mejor"){
     outcome <- read.csv("outcome-of-care-measures.csv", colClasses = "character") 
    
-     estados<-sort(unique(outcome[,7]))
-    listap<-as.character()
-    estado2<-as.character()
-    
+     estados<    
     
     if (resultado== "ataque"){
         outcome2<-outcome[11]
@@ -14,7 +11,7 @@
     }else if(resultado=="neumonia"){
         outcome2<-outcome[23]
     }else{
-        stop("Resultado inválido")
+        stop("Resultado invÃ¡lido")
     }
     
     for (estado in estados){ 
