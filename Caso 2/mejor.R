@@ -2,10 +2,21 @@ mejor<-function(estado,resultado){
     outcome <- read.csv("outcome-of-care-measures.csv", colClasses = "character")   
     estados<-outcome[,7]
     
+    if (!estado %in% estados){
+        stop("Estado inválido")
+    }
     
-    if(length(estados[estados==estado])==0){stop("estado invalido")}
-    if(length(c("ataque","falla","neumonia")[c("ataque","falla","neumonia")==resultado])==0){stop("resultado invalido")}
-    nestado<-outcome[outcome[,7]==estado,c(2,7,11,17,23)]  #estado que deseas
+    if (resultado== "ataque"){
+        estados<-outcome[11]
+    }else if(resultado== "falla"){
+        estados<-outcome[17]
+    }else if(resultado=="neumonia"){
+        estados<-outcome[23]
+    }else{
+        stop("Resultado inválido")
+    }
+    
+    nestado<-outcome[outcome[,7]==estado,c(2,7,11,17,23)]  
     
     names(nestado)[3:5]<-c("ataque","falla","neumonia")
     
@@ -15,6 +26,5 @@ mejor<-function(estado,resultado){
     m<-min(vresultado[,2])
     y<-vresultado[vresultado[,2]==m, 1]
     y1<-sort(y)
-    #sort(y)[1]
     y1
 }
